@@ -193,7 +193,7 @@ header {
 }
 .logo-black { 
     display: none; 
-    height: 100px;
+    height: 50px;
     width: auto;
     float: left;
     margin: 5px 0;
@@ -223,6 +223,20 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon icon {
+    font-size: 200%;
+    color: #fff;
+}
+
+
 
 /* Sticky navi */
 
@@ -442,7 +456,7 @@ cite img {
 }
 
 /* --------------------------------- */
-/* SIGN UP */
+/* FORM */
 /*---------------------------------- */
 
 .contact-form {
@@ -525,10 +539,11 @@ footer {
     color: #00aced;
 }
 .logo-instagram-outline:hover {
-    color: #dd4b39;
-}
-.logo-facebook-outline:hover {
     color: #517fa4;
+}
+.logo-google-outline:hover {
+    color: #dd4b39;
+
 }
 
 
@@ -539,9 +554,28 @@ footer p {
 }
 
 
+/* --------------------------------- */
+/*  ANIMATIONS */
+/*---------------------------------- */
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+ {
+    opacity: 0;
+    animation-duration: 1s;
+}
 
+.js--wp-4 {
+    animation-duration: 1s;
+}
 
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated,
+ {
+    opacity: 1;
+}
 
 
 
