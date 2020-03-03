@@ -101,15 +101,26 @@ $('.js--nav-icon').click(function() {
 
 });
 
+/* Maps */
+var map = new GMaps({
+  div: '.map',
+  lat: 45.7411629,
+  lng: 21.1463786,
+  zoom: 12
+});
+
+map.addMarker({
+  lat: 45.7411629,
+  lng: 21.1463786,
+  title: 'Timisoara',
+  infoWindow: {
+    content: '<p>Our Timisoara</p>'
+  }
+});
 
 
-
-/* var waypoints = $('#handler-first').waypoint(function(direction) {
-  notify(this.element.id + ' hit 25% from top of window') 
-}, {
-  offset: '25%'
-})
-*/
-
+  $('.js--send-btn').click(function() {
+    
+  });
 
 });

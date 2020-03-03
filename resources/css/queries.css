@@ -35,7 +35,7 @@
         margin-left: 0;
     }
     .plan-price { font-size: 250%; }
-    .contact-form { width: 80%; }
+    .contact-form { width: 90%; }
 
 }
 
@@ -51,7 +51,7 @@
         width: 100%; 
         margin: 0 0 4% 0;
         }
-    /* .main-nav { display: none; } */
+    .main-nav { display: none; }
     .mobile-nav-icon {display: inline-block; }
     .main-nav {
         float: left;
@@ -99,6 +99,25 @@
     .works-step { margin-bottom: 20px; }
     .works-step:last-of-type { margin-bottom: 20px; }
 
+    .map-box {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .map {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        z-index: 0;
+    }
+    
+    .form-box {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 30px 0;
+    }
 
 }
 
