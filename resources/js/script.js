@@ -120,7 +120,45 @@ map.addMarker({
 
 
   $('.js--send-btn').click(function() {
+    /* Retrieved using native(vanilla) js*/
+    var nameJs = document.getElementById('name').value;
+    var emailJs = document.getElementById('email').value;
+    var findUsJs = document.getElementById('find-us').value;
+    var newsJs = document.getElementById('news').value;
+    var messageJs = document.getElementById('message').value;
+   
     
-  });
+    /* Retrieved using jQuery*/
+    var nameJq = $('#name').val();
+    var emailJq = $('#email').val();
+    var findUsJq = $('#find-us').val();
+    var newsJq = $('#news').val();
+    var messageJq = $('#message').val();
 
+    var show = $('.show');
+    var hide = $('.hide');
+    var check = Math.floor(Math.random() * 2) + 1;
+    initMessages();
+
+    if (check === 1) {
+      $(".success").removeClass("hide");
+      $(".success").addClass("show");
+    } else {
+      $(".error").removeClass("hide");
+      $(".error").addClass("show");
+    }
+    setTimeout(initMessages, 5000)
+
+    });
+
+  function initMessages() {
+    var successMessage = $('.success');
+    var errorMessage = $('.error');
+
+    successMessage.removeClass("show");
+    errorMessage.removeClass("show");
+
+    successMessage.addClass("hide");
+    errorMessage.addClass("hide");  
+  }
 });
